@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+// import { AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
   return (
@@ -10,7 +12,7 @@ function Navbar() {
         </Link>
       </div>
       {/* navLinks */}
-      <ul className="flex justify-between items-center space-x-6">
+      <ul className="hidden md:flex justify-between items-center space-x-6">
         <li className="nav-item">
           <Link className="nav-link font-semibold text-lg" to="/portfolio">
             Portfolio
@@ -27,6 +29,10 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+      {/* hamburger menu */}
+      <div className="md:hidden">
+        <AiOutlineMenu size={20} />
+      </div>
     </div>
   );
 }
