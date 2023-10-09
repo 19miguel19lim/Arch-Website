@@ -1,5 +1,13 @@
+import HomeAboutSection from "../components/HomeAboutSection";
+import HomeHeroSection from "../components/HomeHeroSection";
+
 function Home() {
-  return <div>Home Page</div>;
+  return (
+    <>
+      <HomeHeroSection />
+      <HomeAboutSection />
+    </>
+  );
 }
 
 export default Home;

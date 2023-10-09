@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         sans: ["League Spartan", "sans-serif"],
       },
+      backgroundImage: (theme) => ({
+        "home-hero-mobile": "url(./public/home/mobile/image-hero-paramour.jpg)",
+      }),
     },
   },
   plugins: [],
