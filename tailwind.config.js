@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: (theme) => ({
         "home-hero-mobile": "url(./public/home/mobile/image-hero-paramour.jpg)",
+        "small-team-mobile": "url(./public/home/mobile/image-small-team.jpg)",
       }),
     },
   },
