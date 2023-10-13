@@ -6,17 +6,17 @@ function HomeToAbout() {
       <div className="relative">
         <img
           className="block md:hidden"
-          src="/public/home/mobile/image-small-team.jpg"
+          src="home/mobile/image-small-team.jpg"
           alt=""
         />
         <img
           className="hidden md:block lg:hidden"
-          src="/public/home/tablet/image-small-team.jpg"
+          src="home/tablet/image-small-team.jpg"
           alt=""
         />
         <img
           className="hidden lg:block"
-          src="/public/home/desktop/image-small-team.jpg"
+          src="home/desktop/image-small-team.jpg"
           alt=""
         />
         <div className="absolute top-0 bottom-0 right-0 left-0 z-0 bg-gradient-to-b from-transparent to-gray-800"></div>
