@@ -11,7 +11,7 @@ function Navbar() {
       {/* logo */}
       <div className="">
         <Link className="" to="/">
-          <img src="/public/logo.svg" alt="" />
+          <img src="logo.svg" alt="" />
         </Link>
       </div>
       {/* navLinks */}
