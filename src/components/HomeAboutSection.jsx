@@ -3,8 +3,10 @@ function HomeAboutSection() {
     <div className="container my-26 mx-auto max-w-lg">
       <div className="flex flex-col items-start justify-center  my-24 px-6 space-y-12 text-left ">
         <div className="w-24 border-b-2 mb-16 border-veryDarkBlue"></div>
-        <h1 className="text-5xl font-bold">Welcome to Arch Studio</h1>
-        <div className="flex flex-col items-start justify-center space-y-6 text-sm font-light">
+        <h1 className="text-5xl font-extrabold max-w-[60%]">
+          Welcome to Arch Studio
+        </h1>
+        <div className="flex flex-col items-start justify-center space-y-6 text-sm font-light md:text-md">
           <p>
             We have a unique network and skillset to help bring your projects to
             life. Our small team of highly skilled individuals combined with our

@@ -14,8 +14,10 @@ export default {
         sans: ["League Spartan", "sans-serif"],
       },
       backgroundImage: (theme) => ({
-        "home-hero-mobile": "url(./public/home/mobile/image-hero-paramour.jpg)",
-        "small-team-mobile": "url(./public/home/mobile/image-small-team.jpg)",
+        "home-hero-mobile": "url(home/mobile/image-hero-paramour.jpg)",
+        "home-hero-tablet": "url(home/tablet/image-hero-paramour.jpg)",
+        "home-hero-desktop": "url(home/desktop/image-hero-paramour.jpg)",
+        "small-team-mobile": "url(home/mobile/image-small-team.jpg)",
       }),
     },
   },
