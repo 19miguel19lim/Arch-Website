@@ -18,7 +18,7 @@ function HomeFeature() {
         <div className="flex w-full items-center justify-between px-8 md:max-w-[40rem] lg:max-w-[68rem] mx-auto">
           <h1 className="text-3xl font-bold  md:text-5xl">Featured</h1>
           <div className="hidden md:block text-white">
-            <Buttons>See All</Buttons>
+            <Buttons data="/portfolio">See All</Buttons>
           </div>
         </div>
         <div className="flex flex-col mx-auto space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4">

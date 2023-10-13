@@ -8,11 +8,7 @@ function Footer() {
       <div className="flex flex-col items-center justify-around w-full  mx-auto space-y-2 max-w-4xl  pb-12 md:flex-row md:space-y-0 md:space-x-2 lg:max-w-[85rem]">
         {/* logo */}
         <Link className="text-lg hover:scale-110 duration-300" to="/">
-          <img
-            src="/public/logo-white.png"
-            alt=""
-            className="-mt-14 md:mt-0 md:h-20"
-          />
+          <img src="logo-white.png" alt="" className="-mt-14 md:mt-0 md:h-20" />
         </Link>
         {/* menu items */}
         <ul className="flex flex-col items-center justify-center py-12 space-y-6 md:flex-row md:space-y-0 md:space-x-6 text-mediumGrey">
