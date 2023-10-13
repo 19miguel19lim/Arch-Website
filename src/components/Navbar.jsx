@@ -1,39 +1,29 @@
 import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
+import NavLinks from "./NavLinks";
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const handleNav = () => setNav(!nav);
   return (
-    <div className="flex container justify-between items-center max-w-7xl mx-auto h-24 py-4 px-4 overflow-hidden md:justify-around ">
+    <div className="flex container justify-between w-full items-center px-4 max-w-[25rem]  md:max-w-[38rem] mx-auto h-24 py-4 lg:max-w-[71rem]   overflow-hidden   ">
       {/* logo */}
-      <div className="logl">
-        <Link className="text-lg" to="/">
+      <div className="">
+        <Link className="" to="/">
           <img src="/public/logo.svg" alt="" />
         </Link>
       </div>
       {/* navLinks */}
-      <ul className="hidden md:flex justify-between items-center space-x-6 ">
-        <li className="nav-item">
-          <Link className="nav-link font-semibold text-lg" to="/portfolio">
-            Portfolio
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link font-semibold text-lg" to="/about">
-            About us
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link font-semibold text-lg" to="/contact">
-            Contact
-          </Link>
-        </li>
+      <ul className="hidden md:flex justify-between items-center space-x-6 text-mediumGrey ">
+        <NavLinks />
       </ul>
       {/* hamburger menu */}
-      <div className="block md:hidden" onClick={handleNav}>
-        {nav ? <AiOutlineMenu /> : <AiOutlineClose />}
+      <div
+        className="block md:hidden hover:scale-125 duration-300"
+        onClick={handleNav}
+      >
+        {nav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
       </div>
       <div
         className={
@@ -43,21 +33,7 @@ function Navbar() {
         }
       >
         <ul className="flex flex-col items-start justify-center text-left space-y-3 ">
-          <li className="nav-item">
-            <Link className="nav-link font-bold text-xl" to="/portfolio">
-              Portfolio
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link font-bold text-xl" to="/about">
-              About us
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link font-bold text-xl" to="/contact">
-              Contact
-            </Link>
-          </li>
+          <NavLinks />
         </ul>
       </div>
     </div>

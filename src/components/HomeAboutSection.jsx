@@ -1,12 +1,12 @@
-function HomeAboutSection() {
+function HomeAboutSection({ lgScreen }) {
   return (
-    <div className="container my-26 mx-auto max-w-lg">
-      <div className="flex flex-col items-start justify-center  my-24 px-6 space-y-12 text-left ">
-        <div className="w-24 border-b-2 mb-16 border-veryDarkBlue"></div>
-        <h1 className="text-5xl font-extrabold max-w-[60%]">
+    <div className="relative my-26 py-44 mx-auto max-w-lg">
+      <div className="flex flex-col items-start justify-center  px-8 space-y-12 text-left md:px-0">
+        <div className="w-24 border-b-2 mb-16 border-veryDarkBlue lg:hidden"></div>
+        <h1 className="text-5xl font-extrabold max-w-[60%] md:text-6xl md:max-w-[80%]">
           Welcome to Arch Studio
         </h1>
-        <div className="flex flex-col items-start justify-center space-y-6 text-sm font-light md:text-md">
+        <div className="flex flex-col items-start justify-center space-y-6 text-sm  md:text-md lg:max-w-sm">
           <p>
             We have a unique network and skillset to help bring your projects to
             life. Our small team of highly skilled individuals combined with our
@@ -26,6 +26,23 @@ function HomeAboutSection() {
           </p>
         </div>
       </div>
+
+      <>
+        <div
+          className={
+            lgScreen ? "absolute top-[20%] -right-[58%] z-0" : "hidden"
+          }
+        >
+          <img src="/home/desktop/image-welcome.jpg" alt="" />
+        </div>
+        <div
+          className={lgScreen ? "absolute top-0  -right-[22%] z-10" : "hidden"}
+        >
+          <h1 className="font-extrabold text-veryLightGrey text-[14rem]">
+            Welcome
+          </h1>
+        </div>
+      </>
     </div>
   );
 }
