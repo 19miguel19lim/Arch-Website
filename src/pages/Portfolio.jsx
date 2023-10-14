@@ -1,5 +1,13 @@
+import PortfolioFeatures from "../components/PorfotioFeatures";
+import Footer from "../components/Footer";
+
 function Portfolio() {
-  return <div>Portfolio page</div>;
+  return (
+    <>
+      <PortfolioFeatures />
+      <Footer />
+    </>
+  );
 }
 
 export default Portfolio;
