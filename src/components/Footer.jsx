@@ -7,7 +7,11 @@ function Footer() {
     <div className="bg-veryLightGrey">
       <div className="flex flex-col items-center justify-around w-full  mx-auto space-y-2 max-w-4xl  pb-12 md:flex-row md:space-y-0 md:space-x-2 lg:max-w-[85rem]">
         {/* logo */}
-        <Link className="text-lg hover:scale-110 duration-300" to="/">
+        <Link
+          hrefLang="/"
+          className="text-lg hover:scale-110 duration-300"
+          to="/"
+        >
           <img src="logo-white.png" alt="" className="-mt-14 md:mt-0 md:h-20" />
         </Link>
         {/* menu items */}

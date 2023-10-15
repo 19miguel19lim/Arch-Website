@@ -13,7 +13,7 @@ function HomeHeroSection() {
   const [bgImg, setBgImg] = useState(0);
 
   return (
-    <div className="flex w-full items-center justify-center mx-auto">
+    <div id="/" className="flex w-full items-center justify-center mx-auto">
       <div className="relative">
         <img
           className="block md:hidden"

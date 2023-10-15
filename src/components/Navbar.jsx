@@ -7,7 +7,7 @@ function Navbar() {
   const [nav, setNav] = useState(true);
   const handleNav = () => setNav(!nav);
   return (
-    <div className="flex container justify-between w-full items-center px-4 max-w-[25rem]  md:max-w-[38rem] mx-auto h-24 py-4 lg:max-w-[71rem]   overflow-hidden   ">
+    <div className="flex container justify-between w-full items-center px-4 max-w-[25rem]  md:max-w-[38rem] mx-auto h-24 py-4 lg:max-w-[71rem] overflow-hidden   ">
       {/* logo */}
       <div className="">
         <Link className="" to="/">

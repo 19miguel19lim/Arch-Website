@@ -135,3 +135,26 @@ export const heroImg = [
     desktopImage: "home/desktop/image-hero-trinity.jpg",
   },
 ];
+
+export const leaders = [
+  {
+    name: "Jake Richards",
+    position: "Chief Architect",
+    image: "about/desktop/avatar-jake.jpg",
+  },
+  {
+    name: "Thompson Smith",
+    position: "Head Finance",
+    image: "about/desktop/avatar-thompson.jpg",
+  },
+  {
+    name: "Jackson Rourke",
+    position: "Lead Designer",
+    image: "about/desktop/avatar-jackson.jpg",
+  },
+  {
+    name: "Maria Simpson",
+    position: "Senior Architect",
+    image: "about/desktop/avatar-maria.jpg",
+  },
+];
