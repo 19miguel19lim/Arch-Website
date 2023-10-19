@@ -14,19 +14,19 @@ function HomeHeroSection() {
 
   return (
     <div id="/" className="flex w-full items-center justify-center mx-auto">
-      <div className="relative">
+      <div className="relative overflow-hidden ">
         <img
-          className="block md:hidden"
+          className="block md:hidden hover:scale-110 "
           src={heroImg[bgImg].mobileImage}
           alt=""
         />
         <img
-          className="hidden md:block lg:hidden"
+          className="hidden md:block lg:hidden hover:scale-110 "
           src={heroImg[bgImg].tabletImage}
           alt=""
         />
         <img
-          className="hidden lg:block"
+          className="hidden lg:block hover:scale-110 "
           src={heroImg[bgImg].desktopImage}
           alt=""
         />
@@ -42,12 +42,12 @@ function HomeHeroSection() {
                 {heroImg[bgImg].description}
               </p>
             </div>
-            <div className="text-lg font-bold">
-              <Buttons data="/portfolio">See out Portfolio</Buttons>
-            </div>
           </div>
         </div>
-        {!lgScreen ? "" : <Options setBgImg={setBgImg} />}
+        <div className="absolute text-lg font-bold text-white bottom-12 left-6 md:left-16 md:bottom-14 lg:bottom-36 lg:left-44">
+          <Buttons data="/portfolio">See out Portfolio</Buttons>
+        </div>
+        {!lgScreen ? "" : <Options setBgImg={setBgImg} bgImg={bgImg} />}
       </div>
     </div>
   );

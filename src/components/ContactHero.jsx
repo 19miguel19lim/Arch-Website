@@ -1,6 +1,6 @@
 import { BreakPoints } from "./utils/BreakPoints";
 
-function AboutHeroSection() {
+function ContactHero() {
   const windowSize = BreakPoints();
   const smScreen = windowSize.width >= 0;
   const mdScreen = windowSize.width >= 768;
@@ -10,11 +10,11 @@ function AboutHeroSection() {
       <img
         src={
           lgScreen
-            ? "about/desktop/image-hero.jpg"
+            ? "contact/desktop/image-hero.jpg"
             : mdScreen
-            ? "about/tablet/image-hero.jpg"
+            ? "contact/tablet/image-hero.jpg"
             : smScreen
-            ? "about/mobile/image-hero.jpg"
+            ? "contact/mobile/image-hero.jpg"
             : ""
         }
         alt=""
@@ -22,22 +22,20 @@ function AboutHeroSection() {
       />
       <div className="absolute top-24 left-0 z-0 flex flex-col  justify-center py-8 px-4 space-y-6 bg-white max-w-[20rem] md:max-w-[38rem] md:left-[38%] md:top-[45%] md:py-24 md:px-12 lg:py-44 lg:px-24 lg:max-w-[40rem] lg:space-y-12 lg:left-[43%]">
         <h1 className="text-3xl font-bold md:max-w-[20rem] md:text-5xl lg:text-7xl lg:max-w-[30rem]">
-          Your Team of professionals
+          Tell us about your project
         </h1>
         <p className="max-w-[20rem] md:text-lg lg:text-2xl lg:max-w-[30rem]">
-          Our small team of world-class professionals will work with you every
-          step of the way. Strong relationships are at the core of everything we
-          do. This extends to the relationship our projects have with their
-          surroundings.
+          We’d love to hear more about your project. Please, leave a message
+          below or give us a call. We have two offices, one in Texas and one in
+          Tennessee. If you find yourself nearby, come say hello!
         </p>
       </div>
-      <div className="absolute top-[33%] left-[40%] z-10 lg:top-[30%] lg:left-[48%]">
+      <div className="absolute top-[33%] left-[40%] z-10 lg:top-[30%] lg:left-[40%]">
         <h1 className="hidden md:block text-[8rem] font-extrabold text-white lg:text-[12rem]">
-          About
+          Contact
         </h1>
       </div>
     </div>
   );
 }
-
-export default AboutHeroSection;
+export default ContactHero;

@@ -5,7 +5,7 @@ import ButtonLg from "./ButtonLg";
 function Footer() {
   return (
     <div className="bg-veryLightGrey">
-      <div className="flex flex-col items-center justify-around w-full  mx-auto space-y-2 max-w-4xl  pb-12 md:flex-row md:space-y-0 md:space-x-2 lg:max-w-[85rem]">
+      <div className="flex flex-col items-center py-4 justify-around w-full mx-auto space-y-2 max-w-4xl  md:flex-row md:space-y-0 md:space-x-2 lg:max-w-[85rem]">
         {/* logo */}
         <Link
           hrefLang="/"
